@@ -1,3 +1,5 @@
+# Proyect Sancho Plancha
+This is a copy of sanchoplancha.com.ar with learning purpouses.
 # Spa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
