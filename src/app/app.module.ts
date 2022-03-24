@@ -15,6 +15,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { PricesComponent } from './components/prices/prices.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './components/slider/slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SliderComponent } from './components/slider/slider.component';
     BrowserModule,
     FormsModule,
     APP_ROUTING,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
     
   ],
   providers: [],
