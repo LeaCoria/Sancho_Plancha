@@ -16,14 +16,6 @@
     border-radius: 10px;
 }
 
-.card-title {
-    text-shadow: 0px 0px 5px #000000;
-}
-
-.card-text {
-    text-shadow: 0px 0px 5px #000000;
-}
-
 .info.info-horizontal {
     padding: 0px;
 }
@@ -77,4 +69,28 @@
 .down-rigth {
     padding: 20px;
     border-left: 1px solid #FFFFFF;
+}
+
+.card-text.texto-violeta {
+    color: #00bcd4;
+}
+
+.card.mb-3 {
+    border-color: white;
+}
+
+.card-image-nueva {
+    margin-bottom: 40px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px -8px rgba(0, 0, 0, 0.50), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    position: relative;
+}
+
+.testimonials {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
