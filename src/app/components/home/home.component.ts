@@ -12,9 +12,13 @@ export class HomeComponent implements OnInit {
 
   forma!: FormGroup;
 
-  constructor( private fb: FormBuilder ) {
+  forma2!: FormGroup;
+
+  constructor( private fb: FormBuilder, private fb2: FormBuilder ) {
 
   this.crearFormulario();
+
+  this.crearFormularioSusc();
 
   }
 
@@ -28,6 +32,12 @@ export class HomeComponent implements OnInit {
       celular : ['', [ Validators.required, Validators.min(1999999999), Validators.max(9999999999), Validators.pattern( '[0-9]*' ) ] ],
       asunto  : ['', [ Validators.required ] ],
       mensaje : ['', [ Validators.required ] ]
+    })
+  }
+  
+  crearFormularioSusc(){
+    this.forma2 = this.fb2.group({
+      emailSusc : ['', [ Validators.required, Validators.pattern( '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$' ) ] ]
     })
   }
 
@@ -46,6 +56,14 @@ export class HomeComponent implements OnInit {
 
   getValido( input:string ){
     return this.forma.get(input)!.valid && this.forma.get(input)!.touched
+  }
+
+  getNoValido2( input:string ){
+    return this.forma2.get(input)!.invalid && this.forma2.get(input)!.touched
+  }
+
+  getValido2( input:string ){
+    return this.forma2.get(input)!.valid && this.forma2.get(input)!.touched
   }
 
 }
