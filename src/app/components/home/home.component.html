@@ -248,17 +248,52 @@
         </div>
     </div>
 </div>
-<!--- <div class="container text-center contact" style=" margin-top: 70px; ">
+<div class="container text-center contact" style=" margin-top: 70px; ">
     <h2 class="title ">Envíanos un mensaje</h2>
     <h4>A continuación puedes completar el formulario para enviarnos un mensaje, te responderemos a la brevedad.</h4>
-    <form class="row g-3">
-        <div class="col-md-4">
-            <label for="validationServer01" class="form-label">Nombre</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
-            <div class="valid-feedback">
-                Looks good!
+    <form class="row g-3" autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+        <div class="form-group row mt-5">
+            <div class="col">
+                <label class="form-label">Nombre(*)</label>
+                <input class="form-control input-form" type="text" formControlName="nombre" [class.is-invalid]="getNoValido('nombre')" [class.is-valid]="getValido('nombre')">
+                <small *ngIf="getNoValido('nombre')" class="text-danger">Este campo es obligatorio</small>
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col">
+                <label class="form-label">Email(*)</label>
+                <input class="form-control input-form" type="text" formControlName="email" [class.is-invalid]="getNoValido('email')" [class.is-valid]="getValido('email')">
+                <small *ngIf="getNoValido('email')" class="text-danger">Ingrese un e-mail válido</small>
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col">
+                <label class="form-label">Celular(*)</label>
+                <input class="form-control input-form" type="text" formControlName="celular" [class.is-invalid]="getNoValido('celular')" [class.is-valid]="getValido('celular')">
+                <small *ngIf="getNoValido('celular')" class="text-danger">Ingrese un teléfono válido</small>
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col">
+                <label class="form-label">Asunto(*)</label>
+                <input class="form-control input-form" type="text" formControlName="asunto" [class.is-invalid]="getNoValido('asunto')" [class.is-valid]="getValido('asunto')">
+                <small *ngIf="getNoValido('asunto')" class="text-danger">Este campo es obligatorio</small>
+            </div>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col">
+                <label class="form-label">Mensaje(*)</label>
+                <input class="form-control input-form" type="text" formControlName="mensaje" [class.is-invalid]="getNoValido('mensaje')" [class.is-valid]="getValido('mensaje')">
+                <small *ngIf="getNoValido('mensaje')" class="text-danger text-left">Este campo es obligatorio</small>
+            </div>
+        </div>
+        <div class="form-group row mt-3 mb-5">
+            <label class="col-2 col-form-label">&nbsp;</label>
+            <div class="input-group col-md-8">
+                <button type="submit" class="btn btn-outline-primary btn-block">
+            Enviar
+          </button>
             </div>
         </div>
     </form>
-    </div>
-    -->
+</div>

@@ -117,3 +117,18 @@
 .contact h4 {
     color: #999;
 }
+
+.form-group {
+    text-align: left;
+}
+
+.form-label {
+    color: #999;
+}
+
+.input-form {
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
