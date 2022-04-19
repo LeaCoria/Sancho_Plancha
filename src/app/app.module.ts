@@ -16,6 +16,8 @@ import { PricesComponent } from './components/prices/prices.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './components/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { WorkingComponent } from './components/shared/working/working.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContactoComponent,
     PricesComponent,
     SliderComponent,
+    FooterComponent,
+    WorkingComponent,
   ],
   imports: [
     BrowserModule,
