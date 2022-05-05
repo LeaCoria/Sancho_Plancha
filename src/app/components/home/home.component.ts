@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   crearFormulario(){
     this.forma = this.fb.group({
       nombre  : ['', [ Validators.required ] ],
-      email   : ['', [ Validators.pattern( '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$' ) ] ],
+      email   : ['', [ Validators.required, Validators.pattern( '[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$' ) ] ],
       celular : ['', [ Validators.required, Validators.min(1999999999), Validators.max(9999999999), Validators.pattern( '[0-9]*' ) ] ],
       asunto  : ['', [ Validators.required ] ],
       mensaje : ['', [ Validators.required ] ]
