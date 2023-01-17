@@ -18,6 +18,8 @@ import { SliderComponent } from './components/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { WorkingComponent } from './components/shared/working/working.component';
+import { TestimoniosComponent } from './components/testimonios/testimonios.component';
+import { NovedadesComponent } from './components/novedades/novedades.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { WorkingComponent } from './components/shared/working/working.component'
     SliderComponent,
     FooterComponent,
     WorkingComponent,
+    TestimoniosComponent,
+    NovedadesComponent,
   ],
   imports: [
     BrowserModule,

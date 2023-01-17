@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-contacto',
-  templateUrl: './contacto.component.html'
+  selector: 'app-novedades',
+  templateUrl: './novedades.component.html',
+  styles: [
+  ]
 })
-export class ContactoComponent implements OnInit {
-  
+export class NovedadesComponent implements OnInit {
+
   forma!: FormGroup;
 
   forma2!: FormGroup;
@@ -64,3 +66,4 @@ export class ContactoComponent implements OnInit {
   }
 
 }
+
