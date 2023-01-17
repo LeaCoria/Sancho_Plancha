@@ -1,29 +1,38 @@
-# Proyect Sancho Plancha
-This is a copy of sanchoplancha.com.ar with learning purpouses.
-# Spa
+# **Proyecto Sancho Plancha**
+Esta aplicación es una copia de la página [sanchoplancha](https://sanchoplancha.com.ar) con fines de aprendizaje.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+**Este proyecto está creado con Angular CLI**
 
-## Development server
+***
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Dependencias necesarias
 
-## Code scaffolding
+* [NodeJS](https://nodejs.org/es/)
+    * Es recomendable utilizar la última versión estable
+    * Instalado NodeJS, es posible instalar las siguientes dependencias desde la terminal de comandos utilizado el cmd "npm"*
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [TypeScript](https://www.typescriptlang.org/)
 
-## Build
+* [Angular CLI](https://angular.io/cli)
+    * Si está utilizando Linux o Mac, y durante la instalación tuvo un error, pruebe con el siguente comando
+```
+sudo npm install --unsafe -perm -g @angular/cli
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* [Git](https://git-scm.com/)
 
-## Running unit tests
+***
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Clonación de repositorio
 
-## Running end-to-end tests
+Cree una carpeta donde ubicará el proyecto. Abra una terminal en dicha dirección y ejecute el siguiente código:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+git clone git@github.com:LeaCoria/Sancho_Plancha.git
+```
 
-## Further help
+Una vez clonado el código, dirijase a la carpeta raíz del proyecto y abra una terminal. Ejecute el siguiente comando para correr la aplicación:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+ng serve -o
+```
