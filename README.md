@@ -9,7 +9,7 @@ Esta aplicación es una copia de la página [sanchoplancha](https://sanchoplanch
 
 * [NodeJS](https://nodejs.org/es/)
     * Es recomendable utilizar la última versión estable.
-    * Instalado NodeJS, es posible instalar las siguientes dependencias desde la terminal de comandos utilizado el cmd "npm"*.
+    * Instalado NodeJS, es posible instalar las siguientes dependencias desde la terminal de comandos utilizado el cmd "npm".
 
 * [TypeScript](https://www.typescriptlang.org/)
 
