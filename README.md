@@ -1,20 +1,20 @@
 # **Proyecto Sancho Plancha**
 Esta aplicación es una copia de la página [sanchoplancha](https://sanchoplancha.com.ar) con fines de aprendizaje.
 
-**Este proyecto está creado con Angular CLI**
+**Este proyecto está creado con Angular CLI**.
 
 ***
 
 ## Dependencias necesarias
 
 * [NodeJS](https://nodejs.org/es/)
-    * Es recomendable utilizar la última versión estable
-    * Instalado NodeJS, es posible instalar las siguientes dependencias desde la terminal de comandos utilizado el cmd "npm"*
+    * Es recomendable utilizar la última versión estable.
+    * Instalado NodeJS, es posible instalar las siguientes dependencias desde la terminal de comandos utilizado el cmd "npm"*.
 
 * [TypeScript](https://www.typescriptlang.org/)
 
 * [Angular CLI](https://angular.io/cli)
-    * Si está utilizando Linux o Mac, y durante la instalación tuvo un error, pruebe con el siguente comando
+    * Si está utilizando Linux o Mac, y durante la instalación tuvo un error, pruebe con el siguente comando:
 ```
 sudo npm install --unsafe -perm -g @angular/cli
 ```
